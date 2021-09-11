@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Eternal的数据数据小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Eternal的数据数据小站">
+<meta property="og:url" content="http://eternal1690.top/index.html">
+<meta property="og:site_name" content="Eternal的数据数据小站">
+<meta property="og:locale">
+<meta property="article:author" content="Eternal">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Eternal的数据数据小站" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Eternal的数据数据小站</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">数据可以让你看透世界</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://eternal1690.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-三种了解分支与循环" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/11/%E4%B8%89%E7%A7%8D%E4%BA%86%E8%A7%A3%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/" class="article-date">
+  <time class="dt-published" datetime="2021-09-11T07:25:42.210Z" itemprop="datePublished">2021-09-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="三分钟带你了解Python中的分支与循环1"><a href="#三分钟带你了解Python中的分支与循环1" class="headerlink" title="三分钟带你了解Python中的分支与循环1"></a>三分钟带你了解Python中的分支与循环1</h1><p>​    不管你对于python有没有基础，相信只要你学过任何一门编程语言，你都对这三种基本结构不陌生，它们分别是<code>顺序结构</code>、<code>分支结构</code>、<code>循环结构</code>。那么顺序结构其实简单来讲就是说在程序中的代码是按照顺序从第一行代码执行到最后一行代码，但是如果一个程序中只有顺序结构是绝对不能解决大都数问题的，那么这里，我们重点讲另外两种基本结构分支与循环。</p>
+<h2 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h2><pre><code> 很明显，顺序结构不能解决所有的问题，举个极其简单的例子，在你玩游戏的时候如果你在玩某一个关卡结束后，会得到一个对应的分数，这个分数将决定你获得多少奖励或者是否通关。那么面对这种多条路径需要执行其中一条路径时，就有用到了分支结构也叫选择结构。通常在用到分支结构时，通常用`if` 、`elif`、`else`关键字来实现。值得注意的是，python中的分支结构语法不是像c语言或者其它许多语言那样用&#123;&#125;构造代码块，而python中的代码块用统一缩进来构造同一个代码块。
+</code></pre>
+<p>基本语法例子：</p>
+<p>if  <code>条件表达式</code> ：    </p>
+<p>​            pass</p>
+<p>else：</p>
+<p>​            pass</p>
+<p>或者</p>
+<p>if  <code> 条件表达式</code>：</p>
+<p>​            pass</p>
+<p>elif  <code>条件表达式</code>：</p>
+<p>​            pass</p>
+<p>else：</p>
+<p>​            pass</p>
+<p>等等，其实这三个关键字的用法是相当灵活的，if可以单独使用，而elif用在if的基础上，else用在if或者elif的基础上，所以可以看出，elif和else都是不可以单独使用的</p>
+<p>下面用个实例来演示它们的用法。</p>
+<ul>
+<li><p>实现登录页面验证</p>
+<p>输入正确的用户名和密码，只有用户名和密码都正确才能登录成功，否则返回登录失败</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 例如用户名为&#x27;lihua&#x27;，密码&#x27;为123456&#x27;</span><br><span class="line">user_name = input(&quot;用户名&quot;)</span><br><span class="line">password = input(&quot;密码&quot;)</span><br><span class="line">if password == &#x27;123456&#x27; and user_name == &quot;lihua&quot;:</span><br><span class="line">    print(&quot;登陆成功&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;登陆失败&quot;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>注意1：这里的缩进是四个空格，当然你使用tab键是可以的，但是每个系统上的tab键缩进的空格个数不一定都是四个空格，所以为了代码的兼容性，严格来讲，使用四个空格统一缩进才是最佳的做法</p>
+<p>注意2：这里的  ‘’  、 ” “、 ( ) 以及 = 都是 在英文输入法下的符号，不然会报错</p>
+</blockquote>
+<ul>
+<li><p>构造更多的分支时，如分段函数的表示<br>$$<br>f(x) =</p>
+<pre><code>    \begin&#123;cases&#125;
+        3x + 3,  &amp; \text&#123;$x$ &gt;1&#125; \\
+        2x-1, &amp; \text&#123;-1&lt;=$n$&lt;=1&#125; \\
+        x+2, &amp; \text&#123;$n$&lt;-1&#125; \\
+    \end&#123;cases&#125;
+</code></pre>
+<p>$$<br>实现代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = float(input(&quot;x=&quot;))</span><br><span class="line">y = 0</span><br><span class="line">if x &gt; 1:</span><br><span class="line">    y = 3 * x + 3</span><br><span class="line">elif x &gt;= -1 :</span><br><span class="line">    y = 2 * x - 1</span><br><span class="line">else:</span><br><span class="line">    y = x + 2</span><br><span class="line">print(f&quot;f(x)=&#123;y&#125;&quot;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>这里的elif是可以有很多个的，每一个elif代表在不满足 if 的条件下的一种情况</p>
+</blockquote>
+<p>当然分支语句都是可以嵌套的</p>
+<blockquote>
+<p>无论是分支还是循环，要做到尽量不嵌套，越扁平的代码可读性越好</p>
+</blockquote>
+<p>下面是分支嵌套的实例</p>
+<ul>
+<li><p>进入游戏界面进行登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 只有输入&#x27;我同意&#x27;才能进入登录界面，否则退出</span><br><span class="line"># 进入登录页面后，需要验证账户名和密码都正确方可登陆成功，否则显示登陆失败</span><br><span class="line">judge = input(&#x27;您是否同意一下条款！如果同意请输入&quot;我同意&quot;并回车&#x27;)</span><br><span class="line">user_name = input(&quot;账户名：&quot;)</span><br><span class="line">password = input(&quot;密码：&quot;)</span><br><span class="line">if judge == &#x27;我同意&#x27;:</span><br><span class="line">    print(&quot;您已进入登录界面&quot;)</span><br><span class="line">    if password == &#x27;123456&#x27; and user_name == &quot;lihua&quot;:</span><br><span class="line">        print(&quot;登陆成功&quot;)</span><br><span class="line">    else:</span><br><span class="line">        print(&quot;登陆失败&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;即将在3秒后退出&quot;)    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>这是很简单的分支嵌套，当然，elif 和else也是可以嵌套的，赶紧自己试一试吧</p>
+<p>分支就先讲到这里，循环在三分钟带你了解Python中的分支与循环2哦</p>
+<p>如果对你有帮助，不要忘记点赞、评论加关注对我鼓励哦</p>
+<p><img src="D:\CsdnPhoto\收款码.png" alt="image-20210721233505619"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://eternal1690.top/2021/09/11/%E4%B8%89%E7%A7%8D%E4%BA%86%E8%A7%A3%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/" data-id="cktfgrzyd00003w2c3soh625t" data-title="" class="article-share-link">Compartir</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/11/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-09-11T06:44:22.616Z" itemprop="datePublished">2021-09-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/11/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://eternal1690.top/2021/09/11/hello-world/" data-id="cktffcql200007k2c94rgfwco" data-title="Hello World" class="article-share-link">Compartir</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archivos</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Posts recientes</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/11/%E4%B8%89%E7%A7%8D%E4%BA%86%E8%A7%A3%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/11/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Eternal<br>
+      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
